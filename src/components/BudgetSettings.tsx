@@ -49,19 +49,19 @@ const BudgetSettings = () => {
       </div>
 
       {isEditing ? (
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
           <input
             type="number"
             value={budget}
             onChange={(e) => setBudget(e.target.value)}
-            className="form-input flex-1 py-2 text-lg font-mono"
+            className="form-input w-24 py-2 text-lg font-mono"
             step="0.01"
             min="0.01"
           />
           <button
             onClick={handleSave}
             disabled={updateBudget.isPending}
-            className="btn-primary py-2 px-4 text-sm"
+            className="btn-primary py-2 px-4 text-sm flex-shrink-0"
           >
             {updateBudget.isPending ? '...' : 'Save'}
           </button>
