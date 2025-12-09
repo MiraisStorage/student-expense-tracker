@@ -35,9 +35,9 @@ export const getCategoryClass = (category: Category): string => {
 };
 
 export const formatCurrency = (amount: number): string => {
-  return new Intl.NumberFormat('en-PH', {
+  return new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'PHP',
+    currency: 'USD',
     minimumFractionDigits: 2,
   }).format(amount);
 };
