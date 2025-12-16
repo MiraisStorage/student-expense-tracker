@@ -53,7 +53,7 @@ const ExpenseForm = () => {
         </div>
 
         <div>
-          <label className="block text-sm text-muted-foreground mb-2">Amount ($)</label>
+          <label className="block text-sm text-muted-foreground mb-2">Amount (₱)</label>
           <input
             type="number"
             value={amount}
